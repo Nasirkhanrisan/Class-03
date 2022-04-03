@@ -18,25 +18,50 @@ $avg_mark =77.5;
 
 echo "<br>";
 
-$mark = $avg_mark;
+// $mark = $avg_mark;
 
-if($mark <= 32){
-    echo "F Grade"; 
-}elseif($mark <= 39){
-    echo "Result D grade";
-}elseif($mark <= 49){
-    echo "Result C grade";
-}elseif($mark <= 59){
-    echo "Result B grade";
-}elseif($mark <= 69){
-    echo "Result A- grade";
-}elseif($mark <= 79){
-    echo "Result A grade";
-}elseif($mark <= 100 ){
-    echo "Result A+ grade";
-}elseif($mark > 100){
-    echo "Result Invalid";
-}
+// if($mark <= 32){
+//     echo "F Grade"; 
+// }elseif($mark <= 39){
+//     echo "Result D grade";
+// }elseif($mark <= 49){
+//     echo "Result C grade";
+// }elseif($mark <= 59){
+//     echo "Result B grade";
+// }elseif($mark <= 69){
+//     echo "Result A- grade";
+// }elseif($mark <= 79){
+//     echo "Result A grade";
+// }elseif($mark <= 100 ){
+//     echo "Result A+ grade";
+// }elseif($mark > 100){
+//     echo "Result Invalid";
+// }
+
+$mark    = $avg_mark;
+    if($mark < 32  && $mark <= 32){
+        echo "F Grade";
+    }
+    elseif($mark >=33 && $mark <=39){
+        echo "D Grade";
+   }
+   elseif($mark >=40 && $mark <=49){
+        echo "C Grade";
+   }
+   elseif($mark >=50 && $mark <=59){
+        echo "B Grade";
+   }
+   elseif($mark >=60 && $mark <=69){
+        echo "A- Grade";
+   }elseif($mark >=70 && $mark <=79){
+    echo "A Grade";
+   }elseif($mark >=80 && $mark <=100){
+    echo "Golden A Grade";
+   }else{
+       echo "Invalid Number";
+   }
+  
+   
 
 /*
 ======================
@@ -73,5 +98,38 @@ switch($bike){
     echo "your bike’s headlight will start.";
     break; 
 }   
+
+echo "<br>";
+echo "<br>";
+
+$bangla = 72;
+$english = 82;
+$math = 93;
+$physics = 65;
+$total_marks = $bangla = 72+ $english+$math+$physics;
+$average_mark = $total_marks /4; 
+
+echo "Average Mark: $average_mark";
+
+echo "<br>";
+$marks =  $average_mark;
+
+if( $marks <= 32 ){
+    echo "Result :F Grade";
+}elseif( ($marks >= 33) && ($marks <= 39) ){
+    echo "Result :D Grade";
+}elseif( ($marks >= 40) && ($marks <= 49) ){
+    echo "Result :C Grade";
+}elseif( ($marks >= 50) && ($marks <= 59) ){
+    echo "Result :B Grade";
+}elseif( ($marks >= 60) && ($marks <= 69) ){
+    echo "Result :A- Grade";
+}elseif( ($marks >= 70) && ($marks <= 79) ){
+    echo "Result :A Grade";
+}elseif( ($marks >= 80) && ($marks <= 100) ){
+    echo "Result :C Grade";
+}else{
+   echo "Invalid Number";
+}
 
 ?>
